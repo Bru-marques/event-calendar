@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eventTable.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Event Calendar</title>
+</head>
+<body>
+    <!--Calendar area -->
+    <div class="container-md containerCalendar" >
+        <!--Next events area-->
+        <div class="nextEventsArea row">
+            <h3>Next Events</h3>
+            
+            <!--Event card-->
+          <section>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 g-4">
+                 <div class="card card-md-6">
+                    <div class="card-body">
+                      <h6 class="card-title">Career Branding</h6>
+                      <p class="card-text">Free workshops cover the following areas: An online presence on LinkedIn and social media, CV and cover letter writing, Interview preparation and more.</p>
+                      <p class="eventDate">Next Event on 28/06/21</p>
+                      <div class="guest">
+                                      <a class="registerLink careerBranding" href="#">Register</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-lg-3 col-md-6 col-sm-12 g-4 ">
+                  <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title">Professional Networking</h6>
+                        <p class="card-text">Virtual Speed Networking a fantastic opportunity to broaden the horizons of your professional network in a virtual environment. <br/></p>
+                        <p class="eventDate ">Next Event on 24/06/21</p>
+                        <div class="guest">
+                                        <a class="registerLink pNetworking" href="#">Register</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-lg-3 col-md-6 col-sm-12 g-4 ">
+                    <div class="card">
+                       <div class="card-body">
+                          <h6 class="card-title">MasterClass</h6>
+                          <p class="card-text">Some information Some information Some information Some
+                                  information Some information Some information Some information Some
+                                  information.***</p>
+                          <p class="eventDate ">Next Event soon</p>
+                          <div class="guest">
+                                          <a class="registerLink masterclass" href="#">Register</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-lg-3 col-md-6 col-sm-12 g-4">
+                    <div class="card">
+                      <div class="card-body">
+                          <h6 class="card-title">D&I Safe Space</h6>
+                          <p class="card-text">Some information Some information Some information Some
+                                  information Some information Some information Some information Some
+                                  information.***</p>
+                          <p class="eventDate ">Next Event soon</p>
+                          <div class="guest">
+                                            <a class="registerLink dI" href="#">Register</a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+             </div>
+            </div>
+          </section>
+          <!--Event card end-->
+  
+          <section>
+              <h3>Full Events Calendar</h3>
+  
+              <!--Event category-->
+              <section class="calendarArea">
+                  <div class="categoryArea d-flex flex-row ">
+                      <div class="col">
+                          <div class="d-flex flex-row align-items-start">
+                              <span class="categoryColor careerBranding p-2"></span> 
+                              <p class="categoryName">Career Branding</p>
+                          </div>
+                          <div class="d-flex flex-row ">
+                              <span class="categoryColor  masterclass   p-2"></span>
+                              <p class="categoryName">MasterClass</p>
+                          </div>
+                      </div>
+                  <div class="col">
+                      <div class="d-flex flex-row">
+                          <span class="categoryColor dI p-2"></span>
+                          <p class="categoryName">D&I Safe Space</p>
+                      </div>
+                      <div class="d-flex flex-row">
+                          <span class="categoryColor  pNetworking p-2"></span>
+                          <p class="categoryName">Professional Networking</p>
+                      </div>
+                  </div>
+                  </div>
+              </section>
+               <!--Event category-->
+  
+              <!--Web calendar table-->
+              <section>
+                <table class="table table-bordered table-sm table-striped webCalendar">
+                  <thead>
+                    <tr class="calendarText ">
+                      <th scope="col">JAN</th>
+                      <th scope="col">FEB</th>
+                      <th scope="col">MAR</th>
+                      <th scope="col">APR</th>
+                      <th scope="col">MAY</th>
+                      <th scope="col">JUN</th>
+                      <th scope="col">JUL</th>
+                      <th scope="col">AUG</th>
+                      <th scope="col">SEP</th>
+                      <th scope="col">OCT</th>
+                      <th scope="col">NOV</th>
+                      <th scope="col">DEC</th>
+                    </tr>
+                  </thead>
+  
+                  <tbody class="calendarText">
+                    <tr>
+                      <td class="jan"><div>1</div></td>
+                      <td class="feb"><div class="careerBrandingEvent">1</div></td>
+                      <td class="mar"><div class="careerBrandingEvent">1</div></td>
+                      <td class="apr"><div class="pNetworkingEvent">1</div></td>
+                      <td class="may"><div>1</div></td>
+                      <td class="jun"><div>1</div></td>
+                      <td class="jul"><div class="pNetworkingEvent">1</div>
+                         <div class="popup">
+                                          <div class="guest">
+                              <img class="guestImg" src='speaker.jpg' />
+                              <div class="guestNameArea">
+                                <p class="guestTitle">Professional Networking</p>
+                                <p class="guestName">Mary Jane</p>
+                                <a class="registerLink pNetworking" href="#">Register</a>
+                             </div>
+                      </td>
+                      <td class="ago"><div>1</div></td>
+                      <td class="sep"><div>1</div></td>
+                      <td class="oct"><div>1</div></td>
+                      <td class="nov"><div class="careerBrandingEvent">1</div>
+                         <div class="popup"><div class="guest">
+                            <img class="guestImg" src='speaker.jpg' />
+                             <div class="guestNameArea">
+                                <p class="guestTitle">Career Branding</p>
+                                <p class="guestName">Mary Jane</p>
+                                <a class="registerLink careerBranding" href="#">Register</a>
+                              </div>
+                           </div></div>
+                      </td>
+                      <td class="dec"><div>1</div></td>
+                    </tr>
+                    <tr>
+                      <td class="jan"><div>2</div></td>
+                      <td class="feb"><div>2</div></td>
+                      <td class="mar"><div>2</div></td>
+                      <td class="apr"><div>2</div></td>
+                      <td class="may"><div>2</div></td>
+                      <td class="jun"><div>2</div></td>
+                      <td class="jul"><div>2</div></td>
+                      <td class="ago"><div>2</div></td>
+                      <td class="sep"><div class="pNetworkingEvent">2</div>
+                        <div class="popup"><div class="guest">
+                            <img class="guestImg" src='speaker.jpg' />
+                             <div class="guestNameArea">
+                                <p class="guestTitle">Professional Networking</p>
+                                <p class="guestName">Mary Jane</p>
+                                <a class="registerLink pNetworking" href="#">Register</a>
+                              </div>
+                      </td>
+                      <td class="oct"><div>2</div></td>
+                      <td class="nov"><div>2</div></td>
+                      <td class="dec"><div class="pNetworkingEvent">2</div>
+                        <div class="popup"><div class="guest">
+                          <img class="guestImg" src='speaker.jpg' />
+                          <div class="guestNameArea">
+                            <p class="guestTitle">Professional Networking</p>
+                            <p class="guestName">Mary Jane</p>
+                            <a class="registerLink pNetworking" href="#">Register</a>
+                             </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="jan"><div>3</div></td>
+                      <td class="feb"><div>3</div></td>
+                      <td class="mar"><div>3</div></td>
+                      <td class="apr"><div>3</div></td>
+                      <td class="may"><div class="careerBrandingEvent">3</div></td>
+                      <td class="jun"><div class="pNetworkingEvent">3</div>
+                         <div class="popup"><div class="guest">
+                            <img class="guestImg" src='speaker.jpg' />
+                            <div class="guestNameArea">
+                              <p class="guestTitle">Professional Networking</p>
+                              <p class="guestName">Mary Jane</p>
+                              <a class="registerLink pNetworking" href="#">Register</a>
+                             </div>
+                      </td>
+                      <td class="jul"><div>3</div></td>
+                      <td class="ago"><div>3</div></td>
+                      <td class="sep"><div>3</div></td>
+                      <td class="oct"><div>3</div></td>
+                      <td class="nov"><div>3</div></td>
+                      <td class="dec"><div>3</div></td>
+                    </tr>
+                    <tr>
+                      <td class="jan"><div class="careerBrandingEvent">4</div></td>
+                      <td class="feb"><div class="pNetworkingEvent">4</div></td>
+                      <td class="mar"><div class="pNetworkingEvent">4</div></td>
+                      <td class="apr"><div>4</div></td>
+                      <td class="may"><div>4</div></td>
+                      <td class="jun"><div>4</div></td>
+                      <td class="jul"><div>4</div></td>
+                      <td class="ago"><div>4</div></td>
+                      <td class="sep"><div>4</div></td>
+                      <td class="oct"><div class="careerBrandingEvent">4</div>
+                        <div class="popup"><div class="guest">
+                          <img class="guestImg" src='speaker.jpg' />
+                          <div class="guestNameArea">
+                            <p class="guestTitle">Career Branding</p>
+                            <p class="guestName">Mary Jane</p>
+                            <a class="registerLink careerBranding" href="#">Register</a>
+                           </div>
+                           </div></div>
+                      </td>
+                      <td class="nov"><div class="pNetworkingEvent">4</div>
+                        <div class="popup"><div class="guest">
+                           <img class="guestImg" src='speaker.jpg' />
+                            <div class="guestNameArea">
+                              <p class="guestTitle">Professional Networking</p>
+                                <p class="guestName">Mary Jane</p>
+                                <a class="registerLink pNetworking" href="#">Register</a>
+                             </div>
+                      </td>
+                      <td class="dec"><div>4</div></td>
+                    </tr>
+                    <tr>
+                      <td class="jan"><div>5</div></td>
+                      <td class="feb"><div>5</div> </td>                           
+                      <td class="mar"><div>5</div></td>
+                      <td class="apr"><div class="careerBrandingEvent">5</div></td>
+                      <td class="may"><div>5</div></td>
+                      <td class="jun"><div>5</div></td>
+                      <td class="jul"><div class="careerBrandingEvent">5</div>
+                        <div class="popup"><div class="guest">
+                          <img class="guestImg" src='speaker.jpg' />
+                          <div class="guestNameArea">
+                            <p class="guestTitle">Career Branding</p>
+                            <p class="guestName">Mary Jane</p>
+                            <a class="registerLink careerBranding" href="#">Register</a>
+                          </div>
+                        </div></div>
+                      </td>
+                      <td class="ago"><div>5</div></td>
+                      <td class="sep"><div>5</div></td>                            
+                      <td class="oct"><div>5</div></td>                            
+                      <td class="nov"><div>5</div></td>
+                      <td class="dec"><div>5</div></td>                             
+                    </tr>             
+                          <tr>
+                              <td class="jan"><div>6</div></td>
+                              <td class="feb"><div>6</div></td>
+                              <td class="mar"><div>6</div></td>
+                              <td class="apr"><div>6</div></td>
+                              <td class="may"><div class="pNetworkingEvent">6</div></td>
+                              <td class="jun"><div>6</div></td>
+                              <td class="jul"><div>6</div></td>                            
+                              <td class="ago"><div>6</div></td>
+                              <td class="sep"><div class="careerBrandingEvent">6</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="oct"><div>6</div></td>
+                              <td class="nov"><div>6</div></td>
+                              <td class="dec"><div class="careerBrandingEvent">6</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div class="pNetworkingEvent">7</div></td>
+                              <td class="feb"><div >7</div></td>
+                              <td class="mar"><div>7</div></td>
+                              <td class="apr"><div>7</div></td>
+                              <td class="may"><div >7</div></td>
+                              <td class="jun"><div class="careerBrandingEvent">7 </div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="jul"><div>7</div></td>
+                              <td class="ago"><div>7</div></td>
+                              <td class="sep"><div >7</div></td>
+                              <td class="oct"><div class="pNetworkingEvent">7</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="nov"><div >7</div></td>
+                              <td class="dec"><div >7</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>8</div></td>
+                              <td class="feb"><div class="careerBrandingEvent">8</div></td>
+                              <td class="mar"><div class="careerBrandingEvent">8</div></td>
+                              <td class="apr"><div class="pNetworkingEvent">8</div></td>
+                              <td class="may"><div >8</div></td>
+                              <td class="jun"><div >8</div></td>
+                              <td class="jul"><div class="pNetworkingEvent">8</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="ago"><div >8</div></td>
+                              <td class="sep"><div>8</div></td>
+                              <td class="oct"><div >8</div></td>
+                              <td class="nov"><div class="careerBrandingEvent">8</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="dec"><div>8</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>9</div></td>
+                              <td class="feb"><div>9</div></td>
+                              <td class="mar"><div>9</div></td>
+                              <td class="apr"><div>9</div></td>
+                              <td class="may"><div>9</div></td>
+                              <td class="jun"><div >9</div></td>
+                              <td class="jul"><div>9</div></td>
+                              <td class="ago"><div class="careerBrandingEvent">9</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="sep"><div class="pNetworkingEvent">9</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="oct"><div>9</div></td>
+                              <td class="nov"><div >9</div></td>
+                              <td class="dec"><div class="pNetworkingEvent">9</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>10</div></td>
+                              <td class="feb"><div>10</div></td>
+                              <td class="mar"><div>10</div></td>
+                              <td class="apr"><div>10</div></td>
+                              <td class="may"><div class="careerBrandingEvent">10</div></td>
+                              <td class="jun"><div class="pNetworkingEvent">10</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworkingEvent" href="https://zoom.us/meeting/register/tJEod--qrTIuE9HDl2cordPUlUxzwoebgmdJ">Register</a>
+                                  </div></td>
+                              <td class="jul"><div>10</div></td>
+                              <td class="ago"><div>10</div></td>
+                              <td class="sep"><div>10</div></td>
+                              <td class="oct"><div>10</div></td>
+                              <td class="nov"><div>10</div></td>
+                              <td class="dec"><div>10</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div class="careerBrandingEvent">11</div></td>
+                              <td class="feb"><div class="pNetworkingEvent">11</div></td>
+                              <td class="mar"><div class="pNetworkingEvent">11</div></td>                            
+                              <td class="apr"><div>11</div></td>
+                              <td class="may"><div>11</div></td>
+                              <td class="jun"><div>11</div></td>
+                              <td class="jul"><div>11</div></td>
+                              <td class="ago"><div>11</div></td>
+                              <td class="sep"><div>11</div></td>
+                              <td class="oct"><div class="careerBrandingEvent">11</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>                            
+                              <td class="nov"><div class="pNetworkingEvent">11</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>                            
+                              <td class="dec"><div>11</div></td>                            
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>12</div></td>
+                              <td class="feb"><div>12</div></td>
+                              <td class="mar"><div>12</div></td>
+                              <td class="apr"><div class="careerBrandingEvent">12</div></td>
+                              <td class="may"><div>12</div></td>
+                              <td class="jun"><div>12</div></td>
+                              <td class="jul"><div class="careerBrandingEvent">12</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJYqdOiqrzMvEtdXMeVP_5RJPE31SX30K93p">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="ago"><div>12</div></td>
+                              <td class="sep"><div>12</div></td>
+                              <td class="oct"><div >12</div></td>
+                              <td class="nov"><div>12</div></td>
+                              <td class="dec"><div>12</td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>13</div></td>
+                              <td class="feb"><div>13</div></td>
+                              <td class="mar"><div>13</div></td>
+                              <td class="apr"><div>13</div></td>
+                              <td class="may"><div class="pNetworkingEvent">13</div></td>
+                              <td class="jun"><div>13</div></td>
+                              <td class="jul"><div>13</div></td>
+                              <td class="ago"><div>13</div></td>
+                              <td class="sep"><div class="careerBrandingEvent">13</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="oct"><div>13</div></td>
+                              <td class="nov"><div >13</div></td>
+                              <td class="dec"><div class="careerBrandingEvent">13</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div class="pNetworkingEvent">14</div></td>
+                              <td class="feb"><div>14</div></td>
+                              <td class="mar"><div>14</div></td>
+                              <td class="apr"><div>14</div></td>
+                              <td class="may"><div>14</div></td>
+                              <td class="jun"><div class="careerBrandingEvent">14 </div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="jul"><div>14</div></td>
+                              <td class="ago"><div>14</div></td>
+                              <td class="sep"><div>14</div></td>
+                              <td class="oct"><div class="pNetworkingEvent">14</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="nov"><div >14</div></td>
+                              <td class="dec"><div>14</div></td>
+                          </tr>
+                          <tr>
+                            <td class="jan"><div>15</div></td>
+                              <td class="feb"><div class="careerBrandingEvent">15</div></td>
+                              <td class="mar"><div class="careerBrandingEvent">15</div></td>
+                              <td class="apr"><div class="pNetworkingEvent">15</div></td>
+                              <td class="may"><div>15</div></td>
+                              <td class="jun"><div >15</div></td>
+                              <td class="jul"><div class="pNetworkingEvent">15</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="https://zoom.us/meeting/register/tJcrcOqvpj0oH9YNXTxb_fWOzzRS0zjPJ4B2">Register</a>
+                                  </div></td>
+                              <td class="ago"><div>15</div></td>
+                              <td class="sep"><div>15</div></td>
+                              <td class="oct"><div>15</div></td>
+                              <td class="nov"><div class="careerBrandingEvent">15</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="dec"><div>15</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>16</div></td>
+                              <td class="feb"><div>16</div></td>
+                              <td class="mar"><div>16</div></td>
+                              <td class="apr"><div>16</div></td>
+                              <td class="may"><div>16</div></td>
+                              <td class="jun"><div>16</div></td>
+                              <td class="jul"><div>16</div></td>
+                              <td class="ago"><div class="careerBrandingEvent">16</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="sep"><div class="pNetworkingEvent">16</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="oct"><div>16</div></td>
+                              <td class="nov"><div>16</div></td>
+                              <td class="dec"><div class="pNetworkingEvent">16</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>17</div></td>
+                              <td class="feb"><div>17</div></td>
+                              <td class="mar"><div>17</div></td>                            
+                              <td class="apr"><div>17</div></td>
+                              <td class="may"><div class="careerBrandingEvent">17</div></td>
+                              <td class="jun"><div class="pNetworkingEvent">17</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="jul"><div>17</div></td>
+                              <td class="ago"><div>17</div></td>
+                              <td class="sep"><div>17</div></td>
+                              <td class="oct"><div>17</div></td>                            
+                              <td class="nov"><div>17</div></td>                            
+                              <td class="dec"><div>17</div></td>                            
+                          </tr>
+                          <tr>
+                              <td class="jan"><div class="careerBrandingEvent">18</div></td>
+                              <td class="feb"><div class="pNetworkingEvent">18</div></td>
+                              <td class="mar"><div class="pNetworkingEvent">18</div></td>
+                              <td class="apr"><div>18</div></td>
+                              <td class="may"><div>18</div></td>
+                              <td class="jun"><div>18</div></td>
+                              <td class="jul"><div>18</div></td>                            
+                              <td class="ago"><div>18</div></td>
+                              <td class="sep"><div>18</div></td>
+                              <td class="oct"><div class="careerBrandingEvent">18</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="nov"><div class="pNetworkingEvent">18</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="dec"><div>18</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>19</div></td>
+                              <td class="feb"><div>19</div></td>
+                              <td class="mar"><div>19</div></td>
+                              <td class="apr"><div class="careerBrandingEvent">19</div></td>
+                              <td class="may"><div>19</div></td>
+                              <td class="jun"><div>19</div></td>
+                              <td class="jul"><div class="careerBrandingEvent">19</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="ago"><div class="pNetworkingEvent">19</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="sep"><div>19</div></td>
+                              <td class="oct"><div>19</div></td>
+                              <td class="nov"><div >19</div></td>
+                              <td class="dec"><div>19</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div >20</div></td>
+                              <td class="feb"><div>20</div></td>
+                              <td class="mar"><div>20</div></td>
+                              <td class="apr"><div>20</div></td>
+                              <td class="may"><div class="pNetworkingEvent">20</div></td>
+                              <td class="jun"><div>20</div></td>
+                              <td class="jul"><div>20</div></td>
+                              <td class="ago"><div>20</div></td>
+                              <td class="sep"><div class="careerBrandingEvent">20</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="oct"><div >20</div></td>
+                              <td class="nov"><div>20</div></td>
+                              <td class="dec"><div class="careerBrandingEvent">20</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div class="pNetworkingEvent">21</div></td>
+                              <td class="feb"><div>21</div></td>
+                              <td class="mar"><div>21</div></td>
+                              <td class="apr"><div>21</div></td>
+                              <td class="may"><div>21</div></td>
+                              <td class="jun"><div class="careerBrandingEvent">21</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJAlfuuvrTMuGdbbxCSxsKN80L6qjrAxeIbA">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="jul"><div>21</div></td>
+                              <td class="ago"><div>21</div></td>
+                              <td class="sep"><div>21</div></td>
+                              <td class="oct"><div class="pNetworkingEvent">21</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="nov"<div >21</div></td>
+                              <td class="dec"><div>21</div></td>
+                          </tr>
+                          <tr>
+                            <td class="jan"><div>22</div></td>
+                              <td class="feb"><div class="careerBrandingEvent">22</div></td>
+                              <td class="mar"><div class="careerBrandingEvent">22</div></td>
+                              <td class="apr"><div class="pNetworkingEvent">22</div></td>
+                              <td class="may"><div>22</div></td>
+                              <td class="jun"><div>22</div></td>
+                              <td class="jul"><div class="pNetworkingEvent">22</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="https://zoom.us/meeting/register/tJIlduqtrD8uHdd9SQmw22d6-GJyJBqd3CVD">Register</a>
+                                  </div></td>
+                              <td class="ago"><div>22</div></td>
+                              <td class="sep"><div>22</div></td>
+                              <td class="oct"><div>22</div></td>
+                              <td class="nov"><div class="careerBrandingEvent">22</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="dec"><div>22</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>23</div></td>
+                              <td class="feb"><div>23</div></td>
+                              <td class="mar"><div>23</div></td>                            
+                              <td class="apr"><div>23</div></td>
+                              <td class="may"><div>23</div></td>
+                              <td class="jun"><div>23</div></td>
+                              <td class="jul"><div>23</div></td>
+                              <td class="ago"><div class="careerBrandingEvent">23</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="sep"><div class="pNetworkingEvent">23</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="oct"><div>23</div></td>                            
+                              <td class="nov"><div>23</div></td>                            
+                              <td class="dec"><div class="pNetworkingEvent">23</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>                            
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>24</div></td>
+                              <td class="feb"><div>24</div></td>
+                              <td class="mar"><div>24</div></td>
+                              <td class="apr"><div>24</div></td>
+                              <td class="may"><div class="careerBrandingEvent">24</div></td>
+                              <td class="jun"><div class="pNetworkingEvent">24</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="jul"><div>24</div></td>
+                              <td class="ago"><div>24</div></td>
+                              <td class="sep"><div>24</div></td>
+                              <td class="oct"><div>24</div></td>
+                              <td class="nov"><div >24</div></td>
+                              <td class="dec"><div>24</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div class="careerBrandingEvent">25</div></td>
+                              <td class="feb"><div class="pNetworkingEvent">25</div></td>
+                              <td class="mar"><div class="pNetworkingEvent">25</div></td>
+                              <td class="apr"><div>25</div></td>
+                              <td class="may"><div>25</div></td>
+                              <td class="jun"><div>25</div></td>
+                              <td class="jul"><div>25</div></td>
+                              <td class="ago"><div>25</div></td>
+                              <td class="sep"><div>25</div></td>
+                              <td class="oct"><div class="careerBrandingEvent">25</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="nov"><div class="pNetworkingEvent">25</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="dec"><div>25</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>26</div></td>
+                              <td class="feb"><div>26</div></td>
+                              <td class="mar"><div>26</div></td>
+                              <td class="apr"><div class="careerBrandingEvent">26</div></td>
+                              <td class="may"><div>26</div></td>
+                              <td class="jun"><div >26</div></td>
+                              <td class="jul"><div class="careerBrandingEvent">26</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJcrdeqpqDIqE9T3P5obqyFEnmHNw7ocsCgw">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="ago"><div class="pNetworkingEvent">26</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="sep"><div>26</div></td>
+                              <td class="oct"><div>26</div></td>
+                              <td class="nov"><div>26</div></td>
+                              <td class="dec"><div>26</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>27</div></td>
+                              <td class="feb"><div>27</div></td>
+                              <td class="mar"><div>27</div></td>
+                              <td class="apr"><div>27</div></td>
+                              <td class="may"><div class="pNetworkingEvent">27</div></td>
+                              <td class="jun"><div>27</div></td>
+                              <td class="jul"><div>27</div></td>
+                              <td class="ago"><div>27</div></td>
+                              <td class="sep"><div class="careerBrandingEvent">27</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="oct"><div>27</div></td>
+                              <td class="nov"><div>27</div></td>
+                              <td class="dec"><div class="careerBrandingEvent">27</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div class="pNetworkingEvent">28</div></td>
+                              <td class="feb"><div>28</div></td>
+                              <td class="mar"><div>28</div></td>                            
+                              <td class="apr"><div>28</div></td>
+                              <td class="may"><div>28</div></td>
+                              <td class="jun"><div class="careerBrandingEvent">28</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJYkfuygrj0tEtH7NIsLdI_uvDcGICf97LFr">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="jul"><div>28</div></td>
+                              <td class="ago"><div>28</div></td>
+                              <td class="sep"><div>28</div></td>
+                              <td class="oct"<div class="pNetworkingEvent">28</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>                            
+                              <td class="nov"><div>28</div></td>                            
+                              <td class="dec"><div>28</div></td>                            
+                          </tr>
+                          <tr>
+                            <td class="jan"><div>29</div></td>
+                              <td class="feb"><div>-</div></td>
+                              <td class="mar"><div class="careerBrandingEvent">29</div></td>
+                              <td class="apr"><div class="pNetworkingEvent">29</div></td>
+                              <td class="may"><div>29</div></td>
+                              <td class="jun"><div>29</div></td>
+                              <td class="jul"><div class="pNetworkingEvent">29</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="ago"><div>29</div></td>
+                              <td class="sep"><div>29</div></td>
+                              <td class="oct"><div>29</div></td>
+                              <td class="nov"><div class="careerBrandingEvent">29</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="dec"><div>29</div></td>
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>30</div></td>
+                              <td class="feb"><div>-</div></td>
+                              <td class="mar"><div>30</div></td>                            
+                              <td class="apr"><div>30</div></td>
+                              <td class="may"><div>30</div></td>
+                              <td class="jun"><div>30</div></td>
+                              <td class="jul"><div>30</div></td>
+                              <td class="ago"><div class="careerBrandingEvent">30</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Career Branding</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink careerBranding" href="#">Register</a>
+                                  </div>
+                              </div></div></td>
+                              <td class="sep"><div class="pNetworkingEvent">30</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>
+                              <td class="oct"><div>30</div></td>                            
+                              <td class="nov"><div>30</div></td>                            
+                              <td class="dec"><div class="pNetworkingEvent">30</div>
+                                <div class="popup"><div class="guest">
+                                  <img class="guestImg" src='speaker.jpg' />
+                                  <div class="guestNameArea">
+                                    <p class="guestTitle">Professional Networking</p>
+                                    <p class="guestName">Mary Jane</p>
+                                    <a class="registerLink pNetworking" href="#">Register</a>
+                                  </div></td>                            
+                          </tr>
+                          <tr>
+                              <td class="jan"><div>31</div></td>
+                              <td class="feb"><div>-</div></td>
+                              <td class="mar"><div>31</div></td>
+                              <td class="apr"><div>-</div></td>
+                              <td class="may"><div class="careerBrandingEvent">31</div></td>
+                              <td class="jun"><div>-</div></td>
+                              <td class="jul"><div>31</div></td>
+                              <td class="aug"><div>31</div></td>
+                              <td class="sep"><div>-</div></td>
+                              <td class="oct"><div>31</div></td>
+                              <td class="nov"><div>-</div></td>
+                              <td class="dec"><div>31</div></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </section>
+              <!--Web calendar table end-->
+  
+              <!--Mobile calendar table-->
+              <section>
+                  <div class="mobileCalendar mb-3">
+                  <div class="accordion" id="accordionExample">
+                    <!--June-->
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="monthCard">
+                              <h5 class="month">June 2021</h5>
+                            </div>
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body">
+                          <div>
+                            <table id='9' class="table  table-bordered table-striped ">
+                              <thead>
+                                <tr>
+                                  <th scope="col">mon</th>
+                                  <th scope="col">tue</th>
+                                  <th scope="col">wed</th>
+                                  <th scope="col">thu</th>
+                                  <th scope="col">fri</th>
+                                  <th scope="col">sat</th>
+                                  <th scope="col">sun</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr id="week1">
+                                  <td class="outDate"><div>31</div></td>
+                                  <td><div>1</div></td>
+                                  <td><div>2</div></td>
+                                  <td><div class="pNetworkingEvent">3</div></td>
+                                  <td><div>4</div></td>
+                                  <td><div>5</div></td>
+                                  <td><div>6</div></td>
+                                </tr>
+                                <tr id="week2">
+                                  <td><div class="careerBrandingEvent">7</div></td>
+                                  <td><div>8</div></td>
+                                  <td><div>9</div></td>
+                                  <td><div class="pNetworkingEvent">10</div>
+                                    <div class="popup"><div class="guest">
+                                      <img class="guestImg" src='speaker.jpg' />
+                                      <div class="guestNameArea">
+                                      <p class="guestTitle">Professional Networking</p>
+                                      <p class="guestName">Mary Jane</p>
+                                      <a class="registerLink pNetworking" href="https://zoom.us/meeting/register/tJEod--qrTIuE9HDl2cordPUlUxzwoebgmdJ" >Register</a>
+                                    </div>
+                                  </td>
+                                  <td><div>11</div></td>
+                                  <td><div>12</div></td>
+                                  <td><div>13</div></td>
+                                </tr>
+                                <tr id="week3">
+                                  <td><div class="careerBrandingEvent">14</div>
+                                    <div class="popup"><div class="guest">
+                                      <img class="guestImg" src='speaker.jpg' />
+                                      <div class="guestNameArea">
+                                      <p class="guestTitle">Career Branding</p>
+                                      <p class="guestName">Mary Jane</p>
+                                      <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJUqd-mgrj4vGNVvnZCfblbKq4ZJa1RgqXdy">Register</a>
+                                      </div>
+                                    </div></div>
+                                  </td>
+                                  <td><div>15</div></td>
+                                  <td><div>16</div></td>
+                                  <td><div class="pNetworkingEvent">17</div>
+                                    <div class="popup"><div class="guest">
+                                      <img class="guestImg" src='speaker.jpg' />
+                                        <div class="guestNameArea">
+                                          <p class="guestTitle">Professional Networking</p>
+                                          <p class="guestName">Mary Jane</p>
+                                          <a class="registerLink pNetworking" href="https://zoom.us/meeting/register/tJYvdeCprDMpE9RjjfA9Yf09Pt3yFKltykJ3">Register</a>
+                                        </div>
+                                      </td>
+                                  <td><div>18</div></td>
+                                  <td><div>19</div></td>
+                                  <td><div>20</div></td>
+                                </tr>
+                                <tr id="week4">
+                                  <td><div class="careerBrandingEvent">21</div>
+                                    <div class="popup"><div class="guest">
+                                      <img class="guestImg" src='speaker.jpg' />
+                                        <div class="guestNameArea">
+                                          <p class="guestTitle">Career Branding</p>
+                                          <p class="guestName">Mary Jane</p>
+                                         <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJAlfuuvrTMuGdbbxCSxsKN80L6qjrAxeIbA">Register</a>
+                                        </div>
+                                      </div></div>
+                                    </td>
+                                    <td><div>22</div></td>
+                                    <td><div>23</div></td>
+                                    <td><div class="pNetworkingEvent">24</div>
+                                      <div class="popup"><div class="guest">
+                                        <img class="guestImg" src='speaker.jpg' />
+                                        <div class="guestNameArea">
+                                          <p class="guestTitle">Professional Networking</p>
+                                          <p class="guestName">Mary Jane</p>
+                                          <a class="registerLink pNetworking" href="#">Register</a>
+                                        </div>
+                                    </td>
+                                    <td><div>25</div></td>
+                                    <td><div>26</div></td>
+                                    <td><div>27</div></td>
+                                  </tr> 
+                                  <tr id="week5">
+                                    <td><div class="careerBrandingEvent">28</div>
+                                        <div class="popup"><div class="guest">
+                                          <img class="guestImg" src='speaker.jpg' />
+                                           <div class="guestNameArea">
+                                              <p class="guestTitle">Career Branding</p>
+                                              <p class="guestName">Mary Jane</p>
+                                              <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJYkfuygrj0tEtH7NIsLdI_uvDcGICf97LFr">Register</a>
+                                            </div>
+                                         </div></div>
+                                    </td>
+                                    <td><div>29</div></td>
+                                    <td><div>30</div></td>
+                                    <td><div class="outDate">1</div></td>
+                                    <td><div class="outDate">2</div></td>
+                                    <td><div class="outDate">3</div></td>
+                                    <td><div class="outDate">4</div></td>
+                                </tr>                  
+                              </tbody>
+                             </table></div>
+                          </div>
+                        </div>
+                      </div>
+  
+                    <!--July-->
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <div class="monthCard">
+                                <h5 class="month">July 2021</h5>
+                              </div>
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <div>
+                              <table id='9' class="table  table-bordered table-striped ">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">mon</th>
+                                    <th scope="col">tue</th>
+                                    <th scope="col">wed</th>
+                                    <th scope="col">thu</th>
+                                    <th scope="col">fri</th>
+                                    <th scope="col">sat</th>
+                                    <th scope="col">sun</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr id="week1">
+                                  <td class="outDate"><div>28</div></td>
+                                  <td class="outDate"><div>29</div></td>
+                                  <td class="outDate"><div>30</div></td>
+                                  <td><div class="pNetworkingEvent">1</div>
+                                    <div class="popup"><div class="guest">
+                                      <img class="guestImg" src='speaker.jpg' />
+                                      <div class="guestNameArea">
+                                        <p class="guestTitle">Professional Networking</p>
+                                        <p class="guestName">Mary Jane</p>
+                                        <a class="registerLink pNetworking" href="https://zoom.us/meeting/register/tJApde-tqDspEtP-pc8cmvC2VCEym1-NKHyj">Register</a>
+                                        </div>
+                                  </td>
+                                  <td><div>2</div></td>
+                                  <td><div>3</div></td>
+                                  <td><div>4</div></td>
+                                  </tr>
+                                  <tr id="week2">
+                                  <td><div class="careerBrandingEvent">5</div>
+                                    <div class="popup"><div class="guest">
+                                      <img class="guestImg" src='speaker.jpg' />
+                                      <div class="guestNameArea">
+                                        <p class="guestTitle">Career Branding</p>
+                                        <p class="guestName">Mary Jane</p>
+                                        <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJEud-yvqTwsHtBQujZVU458XrTzDNuZaMjh">Register</a>
+                                      </div>
+                                  </div></div>
+                                  </td>
+                                  <td><div>6</div></td>
+                                                                  <td><div>7</div></td>
+                                                                  <td><div class="pNetworkingEvent">8</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="https://zoom.us/meeting/register/tJcodO-qpjMsG9WYxrbfVPCZpCgTa2yos4sX">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>9</div></td>
+                                                                  <td><div>10</div></td>                                               
+                                                                  <td><div>11</div></td>
+                                                                </tr>
+                                                                <tr id="week3">
+                                                                  <td><div class="careerBrandingEvent">12</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJYqdOiqrzMvEtdXMeVP_5RJPE31SX30K93p">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>13</div></td>
+                                                                  <td><div>14</div></td>
+                                                                  <td><div class="pNetworkingEvent">15</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="https://zoom.us/meeting/register/tJcrcOqvpj0oH9YNXTxb_fWOzzRS0zjPJ4B2">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>16</div></td>
+                                                                  <td><div>17</div></td>
+                                                                  <td><div>18</div></td>
+                                                                </tr>
+                                                                <tr id="week4">
+                                                                  <td><div class="careerBrandingEvent">19</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJEtcuisrTgjHNZhIJ6W_oEXoL35Hb-bqFwK">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>20</div></td>
+                                                                  <td><div>21</div></td>
+                                                                  <td><div class="pNetworkingEvent">22</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="https://zoom.us/meeting/register/tJIlduqtrD8uHdd9SQmw22d6-GJyJBqd3CVD">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>23</div></td>
+                                                                  <td><div>24</div></td>
+                                                                  <td><div>25</div></td>
+                                                                </tr> 
+                                                                <tr id="week5">
+                                                                  <td><div class="careerBrandingEvent">26</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJcrdeqpqDIqE9T3P5obqyFEnmHNw7ocsCgw">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>27</div></td>
+                                                                  <td><div>28</div></td>
+                                                                  <td><div class="pNetworkingEvent">29</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>30</div></td>
+                                                                  <td><div>31</div></td>
+                                                                  <td><div class="outDate">1</div></td>
+                                                                </tr>                   
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <!--August-->
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="monthCard">
+                              <h5 class="month">August 2021</h5>
+                              <div class="monthEvents">
+                              </div>
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                          <div class="card-body">
+                          <div>
+                                                          <table id='9' class="table  table-bordered table-striped ">
+                                                              <thead>
+                                                              <tr>
+                                                                  <th scope="col">mon</th>
+                                                                  <th scope="col">tue</th>
+                                                                  <th scope="col">wed</th>
+                                                                  <th scope="col">thu</th>
+                                                                  <th scope="col">fri</th>
+                                                                  <th scope="col">sat</th>
+                                                                  <th scope="col">sun</th>
+                                                              </tr>
+                                                              </thead>
+                                                              <tbody>
+                                                                  
+                                                              <tr id="week1">
+                                                                  
+                                                                  <td class="outDate"><div>26</div></td>
+                                                                  <td class="outDate"><div>27</div></td>
+                                                                  <td class="outDate"><div>28</div></td>
+                                                                  <td class="outDate"><div>29</div></td>
+                                                                  <td class="outDate"><div>30</div></td>
+                                                                  <td class="outDate"><div>31</div></td>
+                                                                  <td><div>1</div></td>
+                                                              </tr>
+                                                              <tr id="week2">
+                                                                <td><div>2</div></td>
+                                                                  <td><div>3</div></td>
+                                                                  <td><div>4</div></td>
+                                                                  <td><div>5</div></td>
+                                                                  <td><div>6</div></td>
+                                                                  <td><div>7</div></td>
+                                                                  <td><div>8</div></td>
+                                                                </tr>
+                                                                <tr id="week3">
+                                                                  <td><div class="careerBrandingEvent">9</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJYqd-utrDsoEtC6OUQH553xsuia7aB8noNu">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>10</div></td>
+                                                                  <td><div>11</div></td>
+                                                                  <td><div>12</div></td>
+                                                                  <td><div>13</div></td>
+                                                                  <td><div>14</div></td>
+                                                                  <td><div>15</div></td>
+                                                                </tr>
+                                                                <tr id="week4">
+                                                                  <td><div class="careerBrandingEvent">16</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="https://zoom.us/meeting/register/tJMrd-ugqT8oH9eoqUKCyOW-_wLB2BmNge_N">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>17</div></td>
+                                                                  <td><div>18</div></td>
+                                                                  <td><div class="pNetworkingEvent">19</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>20</div></td>
+                                                                  <td><div>21</div></td>
+                                                                  <td><div>22</div></td>
+                                                                </tr> 
+                                                                <tr id="week5">
+                                                                  <td><div class="careerBrandingEvent">23</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>24</div></td>
+                                                                  <td><div>25</div></td>
+                                                                  <td><div class="pNetworkingEvent">26</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>27</div></td>
+                                                                  <td><div>28</div></td>
+                                                                  <td><div>29</div></td>
+                                                                </tr>
+                                                                <tr id="week6">
+                                                                  <td><div class="careerBrandingEvent">30</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>31</div></td>
+                                                                  <td><div class="outDate">1</div></td>
+                                                                  <td><div class="outDate">2</div></td>
+                                                                  <td><div class="outDate">3</div></td>
+                                                                  <td><div class="outDate" >4</div></td>
+                                                                  <td><div class="outDate">5</div></td>
+                                                                  
+                                                                </tr>                   
+                                                              </tbody>
+                                                              </table></div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <!--September-->
+                      <div class="card">
+                        <div class="card-header" id="headingFour">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="monthCard">
+                                <h5 class="month">September 2021</h5>
+                                <div class="monthEvents"></div>
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                          <div class="card-body">
+                          <div>
+                          <div>
+                                                          <table id='9' class="table  table-bordered table-striped ">
+                                                              <thead>
+                                                              <tr>
+                                                                  <th scope="col">mon</th>
+                                                                  <th scope="col">tue</th>
+                                                                  <th scope="col">wed</th>
+                                                                  <th scope="col">thu</th>
+                                                                  <th scope="col">fri</th>
+                                                                  <th scope="col">sat</th>
+                                                                  <th scope="col">sun</th>
+                                                              </tr>
+                                                              </thead>
+                                                              <tbody>
+                                                                  
+                                                              <tr id="week1">
+                                                                  <td class="outDate"><div>30</div></td>
+                                                                  <td class="outDate"><div>31</div></td>
+                                                                  <td><div>1</div></td>
+                                                                  <td><div class="pNetworkingEvent">2</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>3</div></td>
+                                                                  <td><div>4</div></td>
+                                                                  <td><div>5</div></td>
+                                                              </tr>
+                                                              <tr id="week2">
+                                                                  <td><div class="careerBrandingEvent">6</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>7</div></td>
+                                                                  <td><div>8</div></td>
+                                                                  <td><div class="pNetworkingEvent">9</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>10</div></td>
+                                                                  <td><div>11</div></td>
+                                                                  <td><div>12</div></td>
+                                                                </tr>
+                                                                <tr id="week3">
+                                                                  <td><div class="careerBrandingEvent">13</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>14</div></td>
+                                                                  <td><div>15</div></td>
+                                                                  <td><div class="pNetworkingEvent">16</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>17</div></td>
+                                                                  <td><div>18</div></td>
+                                                                  <td><div>19</div></td>
+                                                                </tr>
+                                                                <tr id="week4">
+                                                                  <td><div class="careerBrandingEvent">20</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>21</div></td>
+                                                                  <td><div>22</div></td>
+                                                                  <td><div class="pNetworkingEvent">23</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>24</div></td>
+                                                                  <td><div>25</div></td>
+                                                                  <td><div>26</div></td>
+                                                                </tr> 
+                                                                <tr id="week5">
+                                                                  <td><div class="careerBrandingEvent">27</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>28</div></td>
+                                                                  <td><div>29</div></td>
+                                                                  <td><div class="pNetworkingEvent">30</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div class="outDate">1</div></td>
+                                                                  <td><div class="outDate">2</div></td>
+                                                                  <td><div class="outDate">3</div></td>
+                                                                </tr>
+                                                              </tbody>
+                                                              </table>
+                            </div>                            
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <!--October-->
+                      <div class="card">
+                        <div class="card-header" id="headingFive">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              <div class="monthCard">
+                                <h5 class="month">October 2021</h5>
+                                <div class="monthEvents"></div>
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                          <div class="card-body">
+                          <div>
+                             <table id='9' class="table  table-bordered table-striped ">
+                                <thead>
+                                                              <tr>
+                                                                  <th scope="col">mon</th>
+                                                                  <th scope="col">tue</th>
+                                                                  <th scope="col">wed</th>
+                                                                  <th scope="col">thu</th>
+                                                                  <th scope="col">fri</th>
+                                                                  <th scope="col">sat</th>
+                                                                  <th scope="col">sun</th>
+                                                              </tr>
+                                </thead>
+                                <tbody>
+                                                                  
+                                                              <tr id="week1">
+                                                                  <td class="outDate"><div>27</div></td>
+                                                                  <td class="outDate"><div>28</div></td>
+                                                                  <td class="outDate"><div>29</div></td>
+                                                                  <td class="outDate"><div>30</div></td>
+                                                                  <td><div>1</div></td>
+                                                                  <td><div>2</div></td>
+                                                                  <td><div>3</div></td>
+                                                              </tr>
+                                                              <tr id="week2">
+                                                                  <td><div class="careerBrandingEvent">4</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>5</div></td>
+                                                                  <td><div>6</div></td>
+                                                                  <td><div class="pNetworkingEvent">7</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>8</div></td>
+                                                                  <td><div>9</div></td>
+                                                                  <td><div>10</div></td>
+                                                                </tr>
+                                                                <tr id="week3">
+                                                                  <td><div class="careerBrandingEvent">11</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>12</div></td>
+                                                                  <td><div>13</div></td>
+                                                                  <td><div class="pNetworkingEvent">14</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>15</div></td>
+                                                                  <td><div>16</div></td>
+                                                                  <td><div>17</div></td>
+                                                                </tr>
+                                                                <tr id="week4">
+                                                                  <td><div class="careerBrandingEvent">18</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>19</div></td>
+                                                                  <td><div>20</div></td>
+                                                                  <td><div class="pNetworkingEvent">21</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>22</div></td>
+                                                                  <td><div>23</div></td>
+                                                                  <td><div>24</div></td>
+                                                                </tr> 
+                                                                <tr id="week5">
+                                                                  <td><div class="careerBrandingEvent">25</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>26</div></td>
+                                                                  <td><div>27</div></td>
+                                                                  <td><div class="pNetworkingEvent">28</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>29</div></td>
+                                                                  <td><div>30</div></td>
+                                                                  <td><div>31</div></td>
+                                                                </tr>
+                                </tbody>
+                              </table>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+  
+                      <!--November-->
+                      <div class="card">
+                        <div class="card-header" id="headingSix">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <div class="monthCard">
+                              <h5 class="month">November 2021</h5>
+                              <div class="monthEvents"></div>
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                          <div class="card-body">
+                          <div>
+                                                          <table id='9' class="table  table-bordered table-striped ">
+                                                              <thead>
+                                                              <tr>
+                                                                  <th scope="col">mon</th>
+                                                                  <th scope="col">tue</th>
+                                                                  <th scope="col">wed</th>
+                                                                  <th scope="col">thu</th>
+                                                                  <th scope="col">fri</th>
+                                                                  <th scope="col">sat</th>
+                                                                  <th scope="col">sun</th>
+                                                              </tr>
+                                                              </thead>
+                                                              <tbody>
+                                                                  
+                                                              <tr id="week1">
+                                                                  <td><div class="careerBrandingEvent">1</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>2</div></td>
+                                                                  <td><div>3</div></td>
+                                                                  <td><div class="pNetworkingEvent">4</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>5</div></td>
+                                                                  <td><div>6</div></td>
+                                                                  <td><div>7</div></td>
+                                                              </tr>
+                                                              <tr id="week2">
+                                                                  <td><div class="careerBrandingEvent">8</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>9</div></td>
+                                                                  <td><div>10</div></td>
+                                                                  <td><div class="pNetworkingEvent">11</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>12</div></td>
+                                                                  <td><div>13</div></td>
+                                                                  <td><div>14</div></td>
+                                                                </tr>
+                                                                <tr id="week3">
+                                                                  <td><div class="careerBrandingEvent">15</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>16</div></td>
+                                                                  <td><div>17</div></td>
+                                                                  <td><div class="pNetworkingEvent">18</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>19</div></td>
+                                                                  <td><div>20</div></td>
+                                                                  <td><div>21</div></td>
+                                                                </tr>
+                                                                <tr id="week4">
+                                                                  <td><div class="careerBrandingEvent">22</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>23</div></td>
+                                                                  <td><div>24</div></td>
+                                                                  <td><div class="pNetworkingEvent">25</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>26</div></td>
+                                                                  <td><div>27</div></td>
+                                                                  <td><div>28</div></td>
+                                                                </tr> 
+                                                                <tr id="week5">
+                                                                  <td><div class="careerBrandingEvent">29</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>30</div></td>
+                                                                  <td><div class="outDate">1</div></td>
+                                                                  <td><div class="outDate">2</div></td>
+                                                                  <td><div class="outDate">3</div></td>
+                                                                  <td><div class="outDate" >4</div></td>
+                                                                  <td><div class="outDate">5</div></td>
+                                                                </tr>
+                                                            </tbody>
+                                                              </table></div>
+                          </div>
+                        </div>
+                        </div>
+  
+                      
+                      
+                      
+                      
+                      <!--December-->
+                      <div class="card">
+                        <div class="card-header" id="headingEight">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                <div class="monthCard">
+                                  <h5 class="month">December 2021</h5>
+                                  <div class="monthEvents"></div>
+                            </button>
+                          </h2>
+                        </div>
+  
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                          <div class="card-body">
+                          <div>
+                                                          <table id='9' class="table  table-bordered table-striped ">
+                                                              <thead>
+                                                              <tr>
+                                                                  <th scope="col">mon</th>
+                                                                  <th scope="col">tue</th>
+                                                                  <th scope="col">wed</th>
+                                                                  <th scope="col">thu</th>
+                                                                  <th scope="col">fri</th>
+                                                                  <th scope="col">sat</th>
+                                                                  <th scope="col">sun</th>
+                                                              </tr>
+                                                              </thead>
+                                                              <tbody>
+                                                                  
+                                                              <tr id="week1">
+                                                                  <td class="outDate"><div>29</div></td>
+                                                                  <td class="outDate"><div>30</div></td>
+                                                                  <td><div>1</div></td>
+                                                                  <td><div class="pNetworkingEvent">2</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>3</div></td>
+                                                                  <td><div>4</div></td>
+                                                                  <td><div>5</div></td>
+                                                              </tr>
+                                                              <tr id="week2">
+                                                                  <td><div class="careerBrandingEvent">6</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>7</div></td>
+                                                                  <td><div>8</div></td>
+                                                                  <td><div class="pNetworkingEvent">9</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>10</div></td>
+                                                                  <td><div>11</div></td>
+                                                                  <td><div>12</div></td>
+                                                                </tr>
+                                                                <tr id="week3">
+                                                                  <td><div class="careerBrandingEvent">13</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>14</div></td>
+                                                                  <td><div>15</div></td>
+                                                                  <td><div class="pNetworkingEvent">16</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>17</div></td>
+                                                                  <td><div>18</div></td>
+                                                                  <td><div>19</div></td>
+                                                                </tr>
+                                                                <tr id="week4">
+                                                                  <td><div class="careerBrandingEvent">20</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>21</div></td>
+                                                                  <td><div>22</div></td>
+                                                                  <td><div class="pNetworkingEvent">23</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>24</div></td>
+                                                                  <td><div>25</div></td>
+                                                                  <td><div>26</div></td>
+                                                                </tr> 
+                                                                <tr id="week5">
+                                                                  <td><div class="careerBrandingEvent">27</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Career Branding</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink careerBranding" href="#">Register</a>
+                                                                      </div>
+                                                                  </div></div></td>
+                                                                  <td><div>28</div></td>
+                                                                  <td><div>29</div></td>
+                                                                  <td><div class="pNetworkingEvent">30</div>
+                                                                    <div class="popup"><div class="guest">
+                                                                      <img class="guestImg" src='speaker.jpg' />
+                                                                      <div class="guestNameArea">
+                                                                        <p class="guestTitle">Professional Networking</p>
+                                                                        <p class="guestName">Mary Jane</p>
+                                                                        <a class="registerLink pNetworking" href="#">Register</a>
+                                                                      </div></td>
+                                                                  <td><div>31</div></td>
+                                                                  <td><div class="outDate">1</div></td>
+                                                                  <td><div class="outDate">2</div></td>
+                                                              </tbody>
+                                                              </table></div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+          
+            </section>    
+        </section>
+      </div>
+  <!--End Calendar-->
+  
+    
+</body>
+</html>
